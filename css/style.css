@@ -22,8 +22,7 @@ html {
 
 header {
     width: 100%;
-    height: 30%;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -33,13 +32,10 @@ header {
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
-
-
 }
 
 #toggler {
     display: none;
-    
 }
 
 
@@ -54,10 +50,9 @@ header {
 }
 
 header .logo {
-    font-size: 340%;
+    font-size: 450%;
     color: #D30922;
     font-weight: bold;
-
 }
 
 .navbar a {
@@ -77,37 +72,27 @@ header .icons a {
 
 /*Início do Main*/
 
-main {
-
-
-}
-
 section {
     padding: 2rem 9%;
-    position: fixed;
-
-
+    position: relative;
 }
 
 .home {
     display: flex;
     align-items: center;
     min-height: 100vh;
-   /* background: url(/images/fundo.png);
-    background-size: cover;*/
+    background: url(/images/fundo.png);
+    background-size: cover;
 }
 
 .home .content {
-    max-width: 100rem;
-
+    max-width: 100%;
 }
 
 .home .content h3 {
     font-size: 3rem;
-    color: #ecae02;
+    color: #D30922;
     text-align: center;
-    margin-top: 20%;
-
 }
 
 .home .content .cont {
@@ -117,45 +102,95 @@ section {
     align-items: center;
     font-size: 4rem;
     line-height: 4rem;
-    /*background: url(/images/fundo.png);
-    background-size: cover;*/
+    padding: 1rem 1rem;
 
 
 }
 
-.home .content .cont span {
+.home .content .cont span p {
     font-size: 3rem;
     text-align: center;
+    color: #D30922;
 }
 
-
-
-
+.home .content .cont span #slogan {
+    font-size: 70%;
+    color: black;
+}
 
 .foto-banner {
     width: 80%;
     height: 70%;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 2rem;
+    position: relative;
 
 }
 
-.texto-home {}
+.sobre .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
 
-#nome,
-profissao,
-slogam,
-citacao {}
+.sobre .row .video-container {
+    flex: 1 1 10rem;
+    position: relative;
+    display:flex;
+    flex-direction:row;
+
+}
+
+.sobre .row .video-container video {
+    width:100%;
+    border: 1.5rem  solid #ecad02;
+    border-radius:.5rem;
+    box-shadow:0.5rem 1rem rgba(0, 0, 0, .1); 
+    height:40rem;
+    object-fit: cover;
+    border-radius:200px;
+    
+}
+
+
+
+.sobre .row .video-container h4 {
+    width:100%;
+    height:10%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+  }
+.sobre .row .content {
+    flex: 1 1 40rem;
+    font-size:2rem;
+    width:100%;
+    border: 1px solid blue;
+    text-align:center;
+
+}
 
 
 
 
 
 
-
-
-
-
-
-
+/*---------------------------------------------------------------------------*/
 /**/
 /*início do media query*/
 
@@ -169,15 +204,13 @@ citacao {}
         padding: 2rem;
     }
 
-
-
-
-
-
-
-
+    /*main*/
+    section {
+        padding: 2rem;
+    }
 }
 
+/*---------------------------------------------------------------------------*/
 @media(max-width:768px) {
 
     header .icon-menu {
@@ -204,49 +237,41 @@ citacao {}
         background: #fff;
         border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
+    }
+
+    /*main*/
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content .cont {
+        font-size: 2.5rem;
+        background-position: center;
+    }
+
+    .foto-banner {
+        width: 90%;
+        height: 50%;
+
+    }
+}
 
 
+/*---------------------------------------------------------------------------*/
+@media(max-width:450px) {
+    html {
+        font-size: 40%;
+    }
 
+    header {
+        font-size: 100%;
+        color: #D30922;
+        font-weight: bold;
+    }
 
-
-
-
-
+    .heading {
+        font-size: 3rem;
 
     }
 
-
-    @media(max-width:450px) {
-        html {
-            font-size: 50%;
-        }
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-    .home {}
-
-    .home h3 {}
-
-    .content {}
-
-    .banner {}
-
-    .texto-home {}
-
-    #nome,
-    profissao,
-    slogam,
-    citacao {}
+}
