@@ -91,7 +91,7 @@ section {
 
 .home .content h3 {
     font-size: 3rem;
-    color: #D30922;
+    color: white;
     text-align: center;
 }
 
@@ -110,12 +110,13 @@ section {
 .home .content .cont span p {
     font-size: 3rem;
     text-align: center;
-    color: #D30922;
+    color: white;
 }
 
 .home .content .cont span #slogan {
     font-size: 70%;
-    color: black;
+    color: white;
+    ;
 }
 
 .foto-banner {
@@ -146,27 +147,27 @@ section {
 .sobre .row .video-container {
     flex: 1 1 10rem;
     position: relative;
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
 
 }
 
 .sobre .row .video-container video {
-    width:100%;
-    border: 1.5rem  solid #ecad02;
-    border-radius:.5rem;
-    box-shadow:0.5rem 1rem rgba(0, 0, 0, .1); 
-    height:40rem;
+    width: 100%;
+    border: 1.5rem solid #ecad02;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    height: 40rem;
     object-fit: cover;
-    border-radius:200px;
-    
+    border-radius: 200px;
+
 }
 
 
 
 .sobre .row .video-container h4 {
-    width:100%;
-    height:10%;
+    width: 100%;
+    height: 10%;
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
@@ -175,15 +176,144 @@ section {
     padding: 1rem 2rem;
     text-align: center;
     mix-blend-mode: screen;
-  }
-.sobre .row .content {
-    flex: 1 1 40rem;
-    font-size:2rem;
-    width:100%;
-    border: 1px solid blue;
-    text-align:center;
 
 }
+
+.sobre .row .content {
+    flex: 1 1 40rem;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.sobre .row .content h3 {
+    display: inline-block;
+    font-size: 3rem;
+    color: #ecad02;
+}
+
+.sobre .row .content q {
+    display: block;
+    font-size: 2rem;
+    color: black;
+    text-align: justify;
+    /* background:#eee;*/
+}
+
+.sobre .row .content #autora-frase {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.produtos .box-container-buques {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+
+}
+
+.produtos .box-container-buques .box {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 10%;
+    padding: 2px;
+    border: 5px solid orange;
+}
+
+.produtos .box-container-buques .box img {
+    width: 100%;
+    height: 10%;
+
+}
+
+.produtos .box-container-cestas {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+}
+
+.produtos .box-container-cestas .box {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 10%;
+    padding: 2px;
+    border: 5px solid orange;
+
+}
+
+.produtos .box-container-cestas .box img {
+    width: 100%;
+    height: 10%;
+}
+
+.produtos .box-container-sobremesas {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+}
+
+.produtos .box-container-sobremesas .box {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 10%;
+    padding: 2px;
+    border: 5px solid orange;
+
+}
+
+.produtos .box-container-sobremesas .box img {
+    width: 100%;
+    height: 100%;
+}
+
+.produtos h3 {
+    font-size: 4rem;
+}
+
+.produtos h4 {
+    display: inline;
+    font-size: 2rem;
+}
+
+.produtos .box-container .box img {
+    width: 80%;
+    padding: 20px;
+}
+
 
 
 
