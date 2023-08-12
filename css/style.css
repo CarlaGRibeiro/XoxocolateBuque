@@ -1,3 +1,10 @@
+:root{
+    --rosa: #D30922;
+    --girassol:#ecad02;
+    --orange: orange;
+    --white: white;
+   }
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +48,7 @@ header {
 
 .icon-menu {
     font-size: 3rem;
-    color: #D30922;
+    color: var(--rosa);
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
@@ -51,18 +58,18 @@ header {
 
 header .logo {
     font-size: 450%;
-    color: #D30922;
+    color: var(--rosa);
     font-weight: bold;
 }
 
 .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #ecae02;
+    color: var(--girassol);
 }
 
 .navbar a:hover {
-    color: #D30922;
+    color:var(--rosa);
 }
 
 header .icons a {
@@ -91,7 +98,7 @@ section {
 
 .home .content h3 {
     font-size: 3rem;
-    color: white;
+    color: var(--rosa);
     text-align: center;
 }
 
@@ -131,6 +138,7 @@ section {
     padding: 1rem;
     margin: 2rem;
     position: relative;
+    color:var(--rosa);
 
 }
 
@@ -154,7 +162,7 @@ section {
 
 .sobre .row .video-container video {
     width: 100%;
-    border: 1.5rem solid #ecad02;
+    border: 1.5rem solid var(--girassol);
     border-radius: .5rem;
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
     height: 40rem;
@@ -191,7 +199,7 @@ section {
 .sobre .row .content h3 {
     display: inline-block;
     font-size: 3rem;
-    color: #ecad02;
+    color: var(--girassol);
 }
 
 .sobre .row .content q {
@@ -215,103 +223,96 @@ section {
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    color:var(--rosa);
+
 
 }
 
-.produtos .box-container-buques {
+.produtos .box-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     flex-direction: row;
     width: 120%;
     height: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-
-
-
+    justify-content: space-around;
 }
 
-.produtos .box-container-buques .box {
+.produtos .box-container .box {
     display: flex;
     flex-direction: column;
     width: 15%;
     height: 10%;
     padding: 2px;
-    border: 5px solid orange;
+    font-size: 2rem;
+    position: relative;
+    border: 5px solid var(--orange);
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
-.produtos .box-container-buques .box img {
+.produtos .box-container .box .image img {
     width: 100%;
     height: 10%;
 
 }
 
-.produtos .box-container-cestas {
+.produtos .box-container .box:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+   
+}
+
+.produtos .box-container .box .icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-7rem;
     display: flex;
-    flex-direction: row;
-    width: 120%;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    
+
 
 
 }
-
-.produtos .box-container-cestas .box {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 10%;
-    padding: 2px;
-    border: 5px solid orange;
-
+.produtos .box-container .box:hover .icons {
+    top:0%;
+    
 }
 
-.produtos .box-container-cestas .box img {
-    width: 100%;
-    height: 10%;
-}
 
-.produtos .box-container-sobremesas {
-    display: flex;
-    flex-direction: row;
-    width: 120%;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+.produtos .box-container .box .icons a {
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+background:var(--orange);
+    color:white;
+    font-weight:bold;
+   
 
 
 }
-
-.produtos .box-container-sobremesas .box {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 10%;
-    padding: 2px;
-    border: 5px solid orange;
-
+.produtos .box-container .box .icons a span{
+    border-left:.1rem solid var(--rosa);
+    border-right:.1rem solid var(--rosa);
 }
 
-.produtos .box-container-sobremesas .box img {
-    width: 100%;
-    height: 100%;
+.produtos .box-container .box .icons a:hover{
+    background:var(--rosa);
+    color:white;
 }
+/*.produtos .box-container .box::{
+    transform: scale(2.1);
+    z-index:3;
+}*/
+
 
 .produtos h3 {
     font-size: 4rem;
 }
 
 .produtos h4 {
-    display: inline;
     font-size: 2rem;
-}
-
-.produtos .box-container .box img {
-    width: 80%;
-    padding: 20px;
 }
 
 
@@ -387,6 +388,9 @@ section {
 }
 
 
+
+
+
 /*---------------------------------------------------------------------------*/
 @media(max-width:450px) {
     html {
@@ -395,12 +399,23 @@ section {
 
     header {
         font-size: 100%;
-        color: #D30922;
+        color: var(--rosa);
         font-weight: bold;
     }
 
     .heading {
         font-size: 3rem;
+
+    }
+
+    .produtos .box-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
 
     }
 
