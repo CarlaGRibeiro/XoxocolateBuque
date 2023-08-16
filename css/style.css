@@ -1,9 +1,11 @@
-:root{
+:root {
+    /* --texto-destaque: #3c0d00;*/
+    --texto-destaque: #7a1b01;
     --rosa: #D30922;
-    --girassol:#ecad02;
+    --girassol: #ecad02;
     --orange: orange;
     --white: white;
-   }
+}
 
 * {
     margin: 0;
@@ -45,6 +47,9 @@ header {
     display: none;
 }
 
+header>a>span {
+    color: var(--rosa)
+}
 
 .icon-menu {
     font-size: 3rem;
@@ -58,7 +63,7 @@ header {
 
 header .logo {
     font-size: 450%;
-    color: var(--rosa);
+    color: var(--texto-destaque);
     font-weight: bold;
 }
 
@@ -69,7 +74,7 @@ header .logo {
 }
 
 .navbar a:hover {
-    color:var(--rosa);
+    color: var(--rosa);
 }
 
 header .icons a {
@@ -88,8 +93,8 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(/images/fundo.png);
-    background-size: cover;
+    /* background: url(/images/fundo.png);
+    background-size: cover;*/
 }
 
 .home .content {
@@ -117,12 +122,12 @@ section {
 .home .content .cont span p {
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: var(--rosa);
 }
 
 .home .content .cont span #slogan {
     font-size: 70%;
-    color: white;
+    color: var(--texto-destaque);
     ;
 }
 
@@ -138,7 +143,7 @@ section {
     padding: 1rem;
     margin: 2rem;
     position: relative;
-    color:var(--rosa);
+    color: var(--rosa);
 
 }
 
@@ -223,7 +228,7 @@ section {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    color:var(--rosa);
+    color: var(--rosa);
 
 
 }
@@ -260,23 +265,24 @@ section {
 .produtos .box-container .box:hover {
     cursor: pointer;
     transform: scale(1.2);
-   
+
 }
 
 .produtos .box-container .box .icons {
     position: absolute;
     left: 0;
     right: 0;
-    top:-7rem;
+    top: -7rem;
     display: flex;
-    
+
 
 
 
 }
+
 .produtos .box-container .box:hover .icons {
-    top:0%;
-    
+    top: 0%;
+
 }
 
 
@@ -285,22 +291,24 @@ section {
     height: 2rem;
     line-height: 2rem;
     font-size: 1.5rem;
-background:var(--orange);
-    color:white;
-    font-weight:bold;
-   
+    background: var(--orange);
+    color: white;
+    font-weight: bold;
+
 
 
 }
-.produtos .box-container .box .icons a span{
-    border-left:.1rem solid var(--rosa);
-    border-right:.1rem solid var(--rosa);
+
+.produtos .box-container .box .icons a span {
+    border-left: .1rem solid var(--rosa);
+    border-right: .1rem solid var(--rosa);
 }
 
-.produtos .box-container .box .icons a:hover{
-    background:var(--rosa);
-    color:white;
+.produtos .box-container .box .icons a:hover {
+    background: var(--rosa);
+    color: white;
 }
+
 /*.produtos .box-container .box::{
     transform: scale(2.1);
     z-index:3;
@@ -317,9 +325,92 @@ background:var(--orange);
 
 
 
+.contato .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contato .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.contato .row form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    text-transform: ;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+
+}
+
+.contato .row form .box:focus {
+    border-color: var(--rosa);
+}
+
+.contato .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contato .row .foto {
+    flex: 1 1 40rem;
+}
+
+.contato .row .foto>img {
+    width: 100%;
+
+}
 
 
+.footer {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
+.footer .box-container {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    
+    gap: 0.4rem;
+
+
+}
+
+.footer .box-container .box {
+    width:70%;
+
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: auto;
+    align-items:center;
+    font-size:1.5rem;
+}
+
+.footer .dev {
+    border: 1px solid blue;
+    background: #ecad02;
+    width: 100%;
+}
 
 /*---------------------------------------------------------------------------*/
 /**/
