@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Great+Vibes&family=Italianno&family=Oxanium:wght@300;400;700&family=Playfair+Display:ital@0;1&family=Qwigley&family=Ruthie&display=swap');
+
 :root {
     /* --texto-destaque: #3c0d00;*/
     --texto-destaque: #7a1b01;
@@ -5,7 +7,10 @@
     --girassol: #ecad02;
     --orange: orange;
     --white: white;
+
 }
+
+
 
 * {
     margin: 0;
@@ -112,28 +117,47 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     font-size: 4rem;
     line-height: 4rem;
     padding: 1rem 1rem;
 
-
 }
 
-.home .content .cont .persona{
-    display:flex;
-    flex-direction:column;
-    font-size: 3rem;
+.home .content .cont .persona {
+    width:40%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: var(--rosa);
+    justify-content: center;
+    align-items: center;
+
 }
 
-.home .content .cont span #slogan {
+.persona p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    padding: 1rem;
+    margin: auto;
+
+}
+
+.slogan {
+    width:60%;
+    display:flex;
+    flex-direction:column;
     font-size: 70%;
     color: var(--texto-destaque);
-    ;
+    text-align: center;
+    margin-top:9rem;
+    margin-left:0;
+    align-items:left;
 }
 
+.slogan p{
+    width:70%;
+
+}
 .foto-banner {
     width: 80%;
     height: 70%;
@@ -428,10 +452,13 @@ section {
 .footer .box-container .box h3 {
     font-size: 1.8rem;
     color: var(--girassol);
+    padding: 1rem 0;
+
 }
 
 .footer .box-container .box a {
     color: var(--texto-destaque);
+
 }
 
 .footer .box-container .box p {
@@ -450,24 +477,36 @@ section {
 .footer .box-st {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: auto;
     text-align: center;
+
 }
 
 .footer .box-st .me {
-    width: 100%;
+
     display: inline;
 }
 
-.footer .box-st .me h3,p {
+.footer .box-st .me h4{
     display: inline;
 }
 
+.footer .box-st .me p{
+    display:inline;
+    font-family:"Gloock", sans-serif;
+
+}
 .footer .box-st .contact-me {
-    width: 100%;
+
     display: inline;
+}
+
+.footer .box-st .contact-me img {
+    width: 30px;
+    height: 30px;
 }
 
 
