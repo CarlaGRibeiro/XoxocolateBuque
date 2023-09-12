@@ -95,7 +95,7 @@ section {
     display: flex;
     align-items: center;
     min-height: 40vh;
-    background: url(../images/fundo-girassol.jpg);
+    background: url("./images/fundo-girassol.jpg");
     background-position: bottom left;
 }
 
@@ -356,7 +356,7 @@ section .box-container {
 
 .contato {
     min-height: 40vh;
-    background-image: url(../images/fundo-girassol.jpg);
+    background-image: url("../images/fundo-girassol.jpg");
     background-position: right center;
     align-items: center;
     justify-content: center;
