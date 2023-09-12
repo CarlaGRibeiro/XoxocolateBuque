@@ -356,7 +356,7 @@ section .box-container {
 
 .contato {
     min-height: 40vh;
-    background-image: url(/images/fundo-girassol.jpg);
+    background-image:var(--girassol);
     background-position: right center;
     align-items: center;
     justify-content: center;
