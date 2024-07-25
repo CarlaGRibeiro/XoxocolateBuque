@@ -1,4 +1,4 @@
-document.getElementById("submit-contato").addEventListener('click',()=>{
+document.getElementById("submitContato").addEventListener('click',()=>{
 
     let name= document.getElementById('nomeContato').value;
     let email=document.getElementById('email').value;
